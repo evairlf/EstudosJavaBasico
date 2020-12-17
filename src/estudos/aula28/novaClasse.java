@@ -6,6 +6,8 @@ public class novaClasse {
 		System.out.println("Qual foi manolo");
 		
 		System.out.println("Mudando o bagulhete");
+		
+		System.out.println("Meu cavalo avua");
 	}
 
 }
