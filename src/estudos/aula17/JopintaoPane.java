@@ -3,7 +3,7 @@ package estudos.aula17;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
-
+/*
 public class JopintaoPane {
 
 	public static void main(String[] args) {
@@ -20,4 +20,4 @@ public class JopintaoPane {
 		
 	}
 
-}
+}*/
