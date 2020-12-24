@@ -61,6 +61,7 @@ public class testeJogoDaVelha{
             }
 
             jogo.insereNoJogo(linha, coluna, sinal);
+            
             if ( jogo.verificarGanhador(sinal) ){
             ganhador = true;
             if(sinal == 'X'){
@@ -72,6 +73,22 @@ public class testeJogoDaVelha{
                 System.out.println("Parabens "+jogo.saberNome(1)+"!");
                 jogo.imprimeJogo();
             }
+  
+            }
+            if(jogo.getJogada() == 9 && !jogo.verificaJogador()) {
+            	String confirma;
+            	jogo.imprimeJogo();
+            	System.out.println("NINGUEM GANHOU QUER JOGAR NOVAMENTE?");
+            	confirma = sc.next().toUpperCase();
+            	if(confirma.charAt(0) == 'S') {
+            		System.out.println("Obrigado, o jogo será zerado para recomeçar!");
+            		jogo.zeraJogo();
+            		jogo.setJogada();
+            	}else {
+            		System.out.println("Obrigado por jogar nosso jogo!");
+            		ganhador = true;
+            	}
+            	
             }
         }
 

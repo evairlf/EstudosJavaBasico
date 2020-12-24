@@ -23,4 +23,10 @@ public class Exerc9 {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Exerc9 [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+
 }

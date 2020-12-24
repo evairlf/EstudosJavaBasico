@@ -1,6 +1,7 @@
 package estudos.aula25;
 
 import java.util.*;
+
 // Compiler version JDK 11.0.2
 
 class jogoDaVelha {
@@ -8,6 +9,7 @@ class jogoDaVelha {
 	char[][] jogo = new char[3][3];
 	String[] nome = new String[2];
 	int jogador = 1;
+	int jogada = 0;
 
 	public void imprimeJogo() {
 		for (int i = 0; i < jogo.length; i++) {
@@ -18,6 +20,15 @@ class jogoDaVelha {
 			}
 		}
 		System.out.println();
+	}
+	public void zeraJogo() {
+		for (int i = 0; i < jogo.length; i++) {
+
+			for (int j = 0; j < jogo[i].length; j++) {
+				jogo[i][j] = 0;
+			}
+		}
+		System.out.println();;
 	}
 
 	public void nomeJogadores() {
@@ -56,7 +67,16 @@ class jogoDaVelha {
 
 	public void insereNoJogo(int linha, int coluna, char sinal) {
 		jogo[linha][coluna] = sinal;
+		jogada++;
 
+	}
+	
+	public int getJogada() {
+		return jogada;
+	}
+	
+	public void setJogada() {
+		jogada = 0;
 	}
 
 	public boolean verificarGanhador ( char sinal ){
