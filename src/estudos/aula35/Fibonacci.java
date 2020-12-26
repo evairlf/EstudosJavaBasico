@@ -13,10 +13,10 @@ public class Fibonacci {
 	}
 	
 	public static int fibonacci(int num) {
-		
 		if( num == 0 || num == 1) {
 			return num;
 		}
+		
 		return fibonacci(num-1) + fibonacci(num -2);
 	}
 	
@@ -27,6 +27,13 @@ public class Fibonacci {
 			return num;
 		}
 		return num + somatorio(num-1);
+	}
+	
+	public static int volta(int num) {
+		if(num %2==0) {
+			return num;
+		}
+		return volta(num-3);
 	}
 	
 }

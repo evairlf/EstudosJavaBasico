@@ -7,11 +7,7 @@ private String nome;
 private String horario;
 private Professor professor = new Professor();
 private Aluno[] alunos;
-@Override
-public String toString() {
-	return "Curso:" + nome + "\nHorario: " + horario +"\n-----------"+"\nProfessor: " + professor + "\nAlunos: "
-			+ Arrays.toString(alunos);
-}
+
 public Professor getProfessor() {
 	return professor;
 }
@@ -37,5 +33,10 @@ public void setHorario(String horario) {
 	this.horario = horario;
 }
 
+@Override
+public String toString() {
+	return "Curso:" + nome + "\nHorario: " + horario +"\n-----------"+"\nProfessor: " + professor + "\nAlunos: "
+			+ Arrays.toString(alunos);
+}
 
 }

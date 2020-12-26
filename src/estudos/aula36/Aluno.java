@@ -42,6 +42,7 @@ public boolean verificaAprovado() {
 		return false;
 	}
 }
+
 public void setNotas(double[] notas) {
 	this.notas = notas;
 }

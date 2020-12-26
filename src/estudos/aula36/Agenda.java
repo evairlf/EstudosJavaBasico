@@ -1,5 +1,7 @@
 package estudos.aula36;
 
+import java.util.Iterator;
+
 public class Agenda  {
 private String nome;
 private Contato[] contatos;
@@ -35,4 +37,6 @@ public String exibeInformacao() {
 	return informacao;
 	
 }
+
+
 }

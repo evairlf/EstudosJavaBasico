@@ -1,5 +1,6 @@
 package estudos.aula36;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -31,5 +32,6 @@ public class TesteAgenda {
 		if(agenda != null) {
 		System.out.println(agenda.exibeInformacao());
 		}
+		
 		}
 	}
