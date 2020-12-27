@@ -8,7 +8,7 @@ import java.util.List;
 
 import estudos.aula37.Animal;
 
-public class TesteFiguras{
+public class TesteFiguras {
 	public static ArrayList<FiguraGeometrica> figuras;
 
 	public static void main(String[] args) {
@@ -58,8 +58,8 @@ public class TesteFiguras{
 		cilindro.setAltura(5);
 		cilindro.setRaio(7);
 		figuras.add(cilindro);
-		
-		Collections.sort(figuras,new ComparadorDeNome());
+
+		Collections.sort(figuras, new ComparadorDeNome());
 
 		for (Iterator<FiguraGeometrica> iterator = figuras.iterator(); iterator.hasNext();) {
 			FiguraGeometrica fig = iterator.next();
@@ -95,7 +95,6 @@ public class TesteFiguras{
 		 * Figura3D) { System.out.println(figuras.get(i)); } }
 		 */
 
-		
 	}
 
 }
