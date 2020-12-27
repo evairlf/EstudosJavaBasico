@@ -45,6 +45,16 @@ public class TesteAnimais {
 		ursoCanadense.setAlimento("Mel");
 		animais.add(ursoCanadense);
 		
+		//MAIS UM BICHO
+		Mamifero baleia = new Mamifero();
+		baleia.setNome("Baleia");
+		baleia.setNomeCientifico("Balaenoptera musculus");
+		baleia.setComprimento(200);
+		baleia.setPatas(0);
+		baleia.setVelocidade(5);
+		baleia.setAlimento("Peixes");
+		animais.add(baleia);
+		
 		//ORGANIZAR ARRAY DE OBJETOS
 		Collections.sort(animais, new Comparator<Object>(){
 		    public int compare(Object o1, Object o2) {

@@ -7,6 +7,7 @@ public class PessoaJuridica extends Pessoa {
 DecimalFormat dc = new DecimalFormat("###,###.##");
 private String cnpj;
 private long rendaBruta;
+
 public String getCNPJ() {
 	
 	return cnpj;
