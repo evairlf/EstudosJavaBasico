@@ -5,9 +5,10 @@ private String nome;
 private int ddd;
 private int telefone;
 private int identificador;
-private Agenda agenda = new Agenda();
 
-Contato(){}
+Contato(){
+	
+}
 
 
 
@@ -15,7 +16,6 @@ public Contato(String nome, int ddd, int telefone) {
 	this.nome = nome;
 	this.ddd = ddd;
 	this.telefone = telefone;
-	this.identificador = agenda.contatorContato();
 }
 
 
@@ -71,8 +71,7 @@ public void setIdentificador(int identificador) {
 
 @Override
 public String toString() {
-	return "Contato [nome=" + nome + ", ddd=" + ddd + ", telefone=" + telefone + ", identificador=" + identificador
-			+ ", agenda=" + agenda + "]";
+	return "\nNome: " + this.nome + "\nDDD: " + ddd + "\nTelefone: " +"("+ ddd + ")" + telefone + "\nIdentificador: " + identificador;
 }
 
 }

@@ -3,7 +3,7 @@ package estudos.aula52;
 import java.util.Arrays;
 
 public class Agenda {
-	private int contador;
+	private static int contador;
 
 	private String nome;
 	private Contato[] contatos;
@@ -23,19 +23,29 @@ public class Agenda {
 	public Contato[] getContatos() {
 		return contatos;
 	}
+	
+	public Contato getContato(int i) {
+		return contatos[i];
+	}
 
 	public void setContatos(Contato[] contatos) {
 		this.contatos = contatos;
 	}
 	
-	public int contatorContato() {
+	public static int contadorContato() {
 		contador++;
 		return contador;
 	}
 
+	public static int getContador() {
+		contadorContato();
+		return contador;
+	}
+
+
 	@Override
 	public String toString() {
-		return "Agenda [contador=" + contador + ", nome=" + nome + ", contatos=" + Arrays.toString(contatos) + "]";
+		return "Agenda :"+ getNome() + "\n"+ Arrays.toString(contatos).replace("[", "").replace("]", "").replace(",", "\n------------------------\n");
 	}
 	
 	
