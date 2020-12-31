@@ -8,12 +8,12 @@ public class Teste {
 		Scanner sc = new Scanner(System.in);
 		String a = sc.nextLine();
 		try {
-			if(a.equals("b")) {
-				throw new Exception("A nao pode ser igual B");
+			if (Character.isDigit(a.charAt(0)) == true) {
+				throw new Exception("BUGO AQUI Ô");
 			}
-			
-		}catch(Exception exc){
+		} catch (Exception exc) {
 			System.out.println(exc.getMessage());
 		}
+
 	}
 }
